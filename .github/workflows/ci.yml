@@ -27,7 +27,7 @@ jobs:
         os: [ubuntu-latest]
         task:
           - name: Run tests
-            run: poetry run pytest -vv tests
+            run: poetry run pytest -vv --cov=fastapi_w_injector --cov-report=xml tests
             allow_failure: false
 
     steps:
